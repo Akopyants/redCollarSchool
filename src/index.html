@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Тестовое для фронт-школы",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	<header>
+		<a href="https://school.redcollar.ru" target="_blank" class="logo">
+			<img src="img/logo.svg" alt="red collar логотип">
+		</a>
+	</header>
+	<main class="main">
+		<section class="main-section">
+			<div class="container">
+				<h1 class="main-section__title">Тестовое задание:</h1>
+				<ul class="main-section__list">
+					<li class="main-section__list-item">
+						<a href="resume.html" target="_blank" class="main-section__list-link">
+							<div>
+								<div>
+									<span>Резюме</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="main-section__list-item">
+						<a href="timer.html" target="_blank" class="main-section__list-link">
+							<div>
+								<div>
+									<span>Таймер</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<div class="cursor"></div>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

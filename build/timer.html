@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="">
+
+				<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+				<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+				<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+				<link rel="manifest" href="../img/site.webmanifest">
+				<meta name="msapplication-TileColor" content="#da532c">
+				<meta name="theme-color" content="#ffffff">
+	
+
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Таймер</title>
+	<meta
+	property="og:image"
+	content="https://akopyants.ru/img/og.png"
+  >
+  <meta
+	property="og:image:width"
+	content="1200"
+  >
+  <meta
+	property="og:image:height"
+	content="630"
+  >
+	
+</head>
+
+
+
+<body>
+	<header>
+		<a href="https://school.redcollar.ru" target="_blank" class="logo">
+			<img src="img/logo.svg" alt="red collar логотип">
+		</a>
+	</header>
+	<main class="main">
+		
+		<div id="timer" class="timer">
+			<div class="block block--center">
+				<h2 class="block__title" id="timer-title">Работа</h2>
+				<div id="timer-display" class="block__timer">
+				 <div>
+					<span id="timerMinutes">25</span>:<span id="timerSeconds">00</span>
+				 </div>
+				</div>
+				<span id="currentTask" class="block__current-task">xsasdsadsad</span>
+				<div id="timer-controls" class="block-buttons">
+				  <button class="block__button" id="timerBtnStart">Начать</button>
+				  <button class="block__button" id="timerBtnReset">Сбросить</button>
+				</div>
+			</div>
+		
+			<div class="block tasks" id="task-list-container">
+				<h2 class="block__title">Список задач</h2>
+				<ul id="taskList" class="block__list"></ul>
+				<div id="task-input-container">
+				  <input class="block__input" type="text" id="taskInput" placeholder="Добавить задачу" />
+				  <div class="block-buttons">
+					<button class="block__button task-list__button" id="taskBtn">Добавить</button>
+					<button class="block__button task-list__button" id="deleteAllTasksBtn">Удалить все задачи</button>
+				  </div>
+				</div>
+			</div>
+
+			<div class="block">
+				<h2 class="block__title">Количество выполненных помидоров:
+					<span id="pomodoro-counter">0</span>
+				</h2>
+				
+			</div>
+		  </div>
+	
+		 
+	</main>
+	<footer class="footer"></footer>
+
+	<script src="js/libs.min.js"></script>
+<!-- <script src="js/tingle.min.js"></script> -->
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

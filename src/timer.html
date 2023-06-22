@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Таймер",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+
+<body>
+	<header>
+		<a href="https://school.redcollar.ru" target="_blank" class="logo">
+			<img src="img/logo.svg" alt="red collar логотип">
+		</a>
+	</header>
+	<main class="main">
+		
+		<div id="timer" class="timer">
+			<div class="block block--center">
+				<h2 class="block__title" id="timer-title">Работа</h2>
+				<div id="timer-display" class="block__timer">
+				 <div>
+					<span id="timerMinutes">25</span>:<span id="timerSeconds">00</span>
+				 </div>
+				</div>
+				<span id="currentTask" class="block__current-task">xsasdsadsad</span>
+				<div id="timer-controls" class="block-buttons">
+				  <button class="block__button" id="timerBtnStart">Начать</button>
+				  <button class="block__button" id="timerBtnReset">Сбросить</button>
+				</div>
+			</div>
+		
+			<div class="block tasks" id="task-list-container">
+				<h2 class="block__title">Список задач</h2>
+				<ul id="taskList" class="block__list"></ul>
+				<div id="task-input-container">
+				  <input class="block__input" type="text" id="taskInput" placeholder="Добавить задачу" />
+				  <div class="block-buttons">
+					<button class="block__button task-list__button" id="taskBtn">Добавить</button>
+					<button class="block__button task-list__button" id="deleteAllTasksBtn">Удалить все задачи</button>
+				  </div>
+				</div>
+			</div>
+
+			<div class="block">
+				<h2 class="block__title">Количество выполненных помидоров:
+					<span id="pomodoro-counter">0</span>
+				</h2>
+				
+			</div>
+		  </div>
+	
+		 
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
